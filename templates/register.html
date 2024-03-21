@@ -1,0 +1,41 @@
+{% extends "common.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{msg}}
+<form action="/newuser" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <th><label>Name</label></th>
+             <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <th><label>UserName</label></th>
+             <td><input type="text" name="uname"></td>
+        </tr>
+        <tr>
+            <th><label>Password</label></th>
+             <td><input type="text" name="pwd"></td>
+        </tr>
+        <tr>
+            <th><label>Email</label></th>
+             <td><input type="text" name="email"></td>
+        </tr>
+         <tr>
+            <th><label>Image</label></th>
+             <td><input type="file" name="image"></td>
+        </tr>
+        <tr>
+
+             <td><input type="submit" name="register"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+
+{% endblock %}
